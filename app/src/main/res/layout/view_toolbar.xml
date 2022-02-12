@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="titleText"
+            type="String" />
+
+        <variable
+            name="menuCancelText"
+            type="String" />
+
+        <variable
+            name="showOptionMenu"
+            type="Boolean" />
+
+        <variable
+            name="showCancelText"
+            type="Boolean" />
+
+        <variable
+            name="progress"
+            type="Integer"/>
+
+        <variable
+            name="showProgress"
+            type="Boolean"/>
+    </data>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:theme="@style/Theme.Basearchitectureandroid.Light.NoActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="noScroll|enterAlways">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="16dp"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:paddingStart="4dp"
+                        android:src="@drawable/ic_back_ios"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@{titleText}"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/menu_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="@{menuCancelText}"
+                        android:textColor="@color/grey_838383"
+                        android:textSize="16sp"
+                        android:paddingHorizontal="8dp"
+                        android:textStyle="bold"
+                        android:visibility="@{showCancelText?View.VISIBLE:View.GONE}"
+                        tools:visibility="visible"
+                        android:layout_gravity="center_vertical|end"/>
+
+                </FrameLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="-4dp"
+                    android:progress="@{progress}"
+                    android:visibility="@{showProgress?View.VISIBLE:View.INVISIBLE}"
+                    app:indicatorColor="@color/orange_FF763C"
+                    app:trackColor="@color/white"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

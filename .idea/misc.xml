@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/drawable/rounded_dialog.xml" value="0.174" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/drawable/rounded_dialog_transparent.xml" value="0.174" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/fragment_home.xml" value="0.152" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/fragment_profile.xml" value="0.10104166666666667" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/item_profile.xml" value="0.2421875" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/view_searchbar.xml" value="0.5224913494809689" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/view_toolbar.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
