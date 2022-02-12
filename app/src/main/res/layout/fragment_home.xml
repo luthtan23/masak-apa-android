@@ -5,7 +5,7 @@
     <data>
         <variable
             name="listener"
-            type="com.luthtan.base_architecture_android.feature.home.HomeListener" />
+            type="com.luthtan.masak_apa_android.feature.home.HomeListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name_prod">base-architecture-android</string>
-    <string name="app_name_staging">base-architecture-android Staging</string>
-    <string name="app_name_dev">base-architecture-android Dev</string>
+    <string name="app_name_prod">Masak Apa</string>
+    <string name="app_name_staging">Masak Apa Staging</string>
+    <string name="app_name_dev">Masak Apa Dev</string>
     <string name="search">Search</string>
 </resources>

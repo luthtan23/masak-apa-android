@@ -5,7 +5,7 @@
     <data>
         <variable
             name="model"
-            type="com.luthtan.base_architecture_android.data.db.ProfileModel" />
+            type="com.luthtan.masak_apa_android.data.db.ProfileModel" />
     </data>
 
     <RelativeLayout

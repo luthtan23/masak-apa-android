@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.luthtan.base_architecture_android.feature.home.HomeFragment"
+        android:name="com.luthtan.masak_apa_android.feature.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.luthtan.base_architecture_android.feature.profile.ProfileFragment"
+        android:name="com.luthtan.masak_apa_android.feature.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
 </navigation>
