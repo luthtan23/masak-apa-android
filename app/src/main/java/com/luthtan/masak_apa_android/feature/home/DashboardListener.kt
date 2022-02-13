@@ -1,5 +1,5 @@
 package com.luthtan.masak_apa_android.feature.home
 
-interface HomeListener {
+interface DashboardListener {
     fun onClickGoToProfile()
 }

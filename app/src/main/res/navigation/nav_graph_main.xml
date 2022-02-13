@@ -3,19 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_main"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/dashboardFragment">
+
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.luthtan.masak_apa_android.feature.home.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/dashboardFragment"
+        android:name="com.luthtan.masak_apa_android.feature.home.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+
         <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_mealByCategoriesFragment"
+            app:destination="@id/mealByCategoriesFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.luthtan.masak_apa_android.feature.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/mealByCategoriesFragment"
+        android:name="com.luthtan.masak_apa_android.feature.filter_categories.MealByCategoriesFragment"
+        android:label="MealByCategoriesFragment"
+        tools:layout="@layout/fragment_meal_by_categories">
+        <argument
+            android:name="meals"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mealByCategoriesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.luthtan.masak_apa_android.feature.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
 </navigation>

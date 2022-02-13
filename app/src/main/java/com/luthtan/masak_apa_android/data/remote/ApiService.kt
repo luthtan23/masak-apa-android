@@ -1,14 +1,34 @@
 package com.luthtan.masak_apa_android.data.remote
 
+import com.luthtan.masak_apa_android.data.dtos.CategoriesModel
 import com.luthtan.masak_apa_android.data.dtos.HomeModel
+import com.luthtan.masak_apa_android.data.dtos.MealsModel
+import com.luthtan.masak_apa_android.data.dtos.SearchNameModel
 import io.reactivex.Flowable
 import retrofit2.Response
+import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface ApiService {
 
-    @POST("sample/post/json")
-    suspend fun getDataCoroutine() : Response<HomeModel>
+    @GET("categories.php")
+    suspend fun getDataCoroutine() : Response<CategoriesModel>
+
+    @GET("filter.php")
+    suspend fun getFilterCategories(
+        @Query("c") filterStr: String
+    ) : Response<MealsModel>
+
+    @GET("search.php")
+    suspend fun getSearchByName(
+        @Query("s") queryName: String
+    ) : Response<SearchNameModel>
+
+    @GET("lookup.php")
+    suspend fun getDetailById(
+        @Query("i") id: String
+    ) : Response<SearchNameModel>
 
     @POST("sample/post/json")
     fun getDataRxJava() : Flowable<HomeModel>

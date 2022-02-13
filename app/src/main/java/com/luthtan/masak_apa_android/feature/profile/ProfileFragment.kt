@@ -1,8 +1,13 @@
 package com.luthtan.masak_apa_android.feature.profile
 
+import android.graphics.Color
+import android.view.Window
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.viewModels
+import com.luthtan.masak_apa_android.R
 import com.luthtan.masak_apa_android.base.BaseFragment
-import com.luthtan.masak_apa_android.data.db.ProfileModel
 import com.luthtan.masak_apa_android.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.scopes.FragmentScoped
@@ -11,10 +16,6 @@ import dagger.hilt.android.scopes.FragmentScoped
 @AndroidEntryPoint
 class ProfileFragment : BaseFragment<FragmentProfileBinding, ProfileViewModel>() {
 
-    private val profileAdapter: ProfileAdapter by lazy {
-        ProfileAdapter()
-    }
-
     override val viewModel: ProfileViewModel by viewModels()
 
     override val binding: FragmentProfileBinding by lazy {
@@ -22,19 +23,33 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding, ProfileViewModel>()
     }
 
     override fun onInitObservers() {
-        viewModel.getDataCoroutine()
-        viewModel.getDataRxJava()
+
     }
 
     override fun onInitViews() {
-        val listData = mutableListOf(ProfileModel("1"), ProfileModel("2"), ProfileModel("3"))
-        profileAdapter.setData(listData)
-        binding.rvTest.adapter = profileAdapter
+        windowProperties(true)
 
-        viewModel.showToast.observe(this) {
-            it.getContentIfNotHandled()?.let { msg ->
-                showToast(msg)
-            }
+        binding.backBtn.setOnClickListener {
+            onBackPressed()
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        windowProperties(false)
+    }
+
+    private fun windowProperties(state: Boolean) {
+        val window: Window = requireActivity().window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        WindowInsetsControllerCompat(
+            requireActivity().window,
+            requireView()
+        ).isAppearanceLightStatusBars = state
+        if (state) {
+            window.statusBarColor = Color.WHITE
+        } else {
+            window.statusBarColor = ContextCompat.getColor(requireContext(), R.color.colorPrimary)
         }
     }
 }

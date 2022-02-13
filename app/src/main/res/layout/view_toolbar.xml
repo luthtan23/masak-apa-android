@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
         android:background="@color/white"
-        android:theme="@style/Theme.Basearchitectureandroid.Light.NoActionBar">
+        android:theme="@style/Theme.Masakapaandroid.NoActionBar">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"

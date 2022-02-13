@@ -25,7 +25,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel> : Fragment() {
                 onBackPressed()
             }
         }
-        requireActivity().onBackPressedDispatcher.addCallback(callback)
+        requireActivity().onBackPressedDispatcher.addCallback(this, callback)
     }
 
     protected open fun onBackPressed() {

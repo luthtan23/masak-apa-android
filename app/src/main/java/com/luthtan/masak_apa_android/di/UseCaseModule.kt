@@ -1,8 +1,7 @@
 package com.luthtan.masak_apa_android.di
 
 import com.luthtan.masak_apa_android.domain.PostExecutionThread
-import com.luthtan.masak_apa_android.domain.interactors.GetDataCoroutine
-import com.luthtan.masak_apa_android.domain.interactors.GetDataRxJava
+import com.luthtan.masak_apa_android.domain.interactors.*
 import com.luthtan.masak_apa_android.domain.repository.MyRepository
 import dagger.Module
 import dagger.Provides
@@ -26,4 +25,22 @@ object UseCaseModule {
         repository: MyRepository,
         postExecutionThread: PostExecutionThread
     ): GetDataRxJava = GetDataRxJava(repository, postExecutionThread)
+
+    @Provides
+    @ViewModelScoped
+    fun provideGetMeals(
+        repository: MyRepository
+    ): GetMeals = GetMeals(repository)
+
+    @Provides
+    @ViewModelScoped
+    fun provideGetSearchMeals(
+        repository: MyRepository
+    ): GetSearchMeals = GetSearchMeals(repository)
+
+    @Provides
+    @ViewModelScoped
+    fun provideGetDetailById(
+        repository: MyRepository
+    ): GetDetailById = GetDetailById(repository)
 }

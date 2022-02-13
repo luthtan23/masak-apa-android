@@ -43,7 +43,7 @@ class SearchBarWithVoice @JvmOverloads constructor(
             }
         }
 
-        binding.edtSearch.setOnEditorActionListener { v, actionId, event ->
+        binding.edtSearch.setOnEditorActionListener { v, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 listener?.onSearch(v.text.toString())
             }
@@ -59,7 +59,7 @@ class SearchBarWithVoice @JvmOverloads constructor(
                 if (result.resultCode == Activity.RESULT_OK) {
                     val res: ArrayList<String> =
                         result.data!!.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)!!
-                    listener?.onSearch(res[0])
+                    listener.onSearch(res[0])
                     binding.edtSearch.setText(res[0])
                 }
             }
@@ -67,6 +67,11 @@ class SearchBarWithVoice @JvmOverloads constructor(
 
     fun setHint(hint: String) {
         binding.edtSearch.hint = hint
+    }
+
+    fun clearText() {
+        binding.edtSearch.setText("")
+        listener?.onSearch("")
     }
 
     interface OnSearchListener {

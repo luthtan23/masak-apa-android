@@ -1,7 +1,6 @@
 package com.luthtan.masak_apa_android.base
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -31,7 +30,7 @@ abstract class BaseAdapter<VB : ViewBinding, DATA>(
         return BaseViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = data.size ?: 0
+    override fun getItemCount(): Int = data.size
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
         when(data.isNotEmpty()) {

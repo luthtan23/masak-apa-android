@@ -3,4 +3,13 @@
     <string name="app_name_staging">Masak Apa Staging</string>
     <string name="app_name_dev">Masak Apa Dev</string>
     <string name="search">Search</string>
+    <string name="dashboard_greeting">Hallo, Luthfi</string>
+    <string name="dashboard_greeting_title">Temukan Resep Masakmu!</string>
+    <string name="common_network_error_msg">Could not get data,\nPlease check your network!</string>
+    <string name="common_try_again">Try Again</string>
+    <string name="common_not_found">Not Found</string>
+    <string name="common_sort_by">Sort By</string>
+    <string name="common_ingredients">Ingredients</string>
+    <string name="common_description">Description</string>
+    <string name="common_instruction">Instruction</string>
 </resources>

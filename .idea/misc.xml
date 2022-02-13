@@ -11,6 +11,36 @@
         <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/item_profile.xml" value="0.2421875" />
         <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/view_searchbar.xml" value="0.5224913494809689" />
         <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/basearchitectureandroid/app/src/main/res/layout/view_toolbar.xml" value="0.2421875" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/avatar_1.xml" value="0.177" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/avatar_10.xml" value="0.177" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/bg_btn_sort_by.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/bg_indicator_bottom_sheet.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/bg_rounded_badge.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable-v24/bg_rounded_button_error.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/bg_floating.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/bg_rounded_button_error.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/header_bottom_sheet.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/ic_back_ios.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/ic_filter.xml" value="0.1115" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/rounded_dialog.xml" value="0.1125" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/drawable/splash_background.xml" value="0.1" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/activity_main.xml" value="0.13903985507246377" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/bg_btn_sort_by.xml" value="0.213768115942029" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/bottom_sheet_sort.xml" value="0.4" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/fragment_detail.xml" value="0.2277992277992278" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/fragment_meal_by_categories.xml" value="0.3094405594405594" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/item_categories.xml" value="0.13527851458885942" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/item_filter.xml" value="0.8762376237623762" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/item_meals.xml" value="0.213768115942029" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/item_profile.xml" value="0.2638888888888889" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/item_sort.xml" value="0.213768115942029" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/view_empty.xml" value="0.213768115942029" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/view_error.xml" value="0.4" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/view_header_bottom_sheet.xml" value="0.213768115942029" />
+        <entry key="..\:/muh/Universitas Padjadjaran/Jetpack/masak-apa-android/app/src/main/res/layout/view_toolbar.xml" value="0.10104166666666667" />
       </map>
     </option>
   </component>
